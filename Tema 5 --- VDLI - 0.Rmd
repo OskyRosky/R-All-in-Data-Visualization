@@ -1,0 +1,225 @@
+---
+title: "Visualización de la Información"
+author: "Oscar Centeno Mora"
+output: html_document
+---
+
+
+```{r setup, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+suppressWarnings(library(magrittr))
+suppressWarnings(library(dplyr))
+suppressWarnings(library(readxl))
+suppressWarnings(library(tidyr))
+suppressWarnings(library(DT))
+suppressWarnings(library(kableExtra))
+suppressWarnings(library(formattable))
+suppressWarnings(library(knitr))
+suppressWarnings(library(kableExtra))
+suppressWarnings(library(rpivotTable))
+suppressWarnings(library(gt))
+suppressWarnings(library(reactable))
+suppressWarnings(library(flextable))
+suppressWarnings(library(lattice))
+suppressWarnings(library(ggplot2))
+suppressWarnings(library(hrbrthemes))
+library(viridis)
+
+
+setwd("C:/Users/oscar/Desktop/R --- SAF/Tema 5")
+
+data <- read_excel("data.xlsx")
+```
+
+
+<style>
+table {
+background-color:#FFFFFF;
+}
+</style>
+
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: darkblue;
+}
+</style>
+
+<button onclick="document.body.scrollTop = document.documentElement.scrollTop = 0;" style="
+    position: fixed;
+    bottom: 5px;
+    right: 40px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #0A71A0;
+    border: none;
+    border-radius: 15px;
+    
+">Ir arriba</button>
+
+# {.tabset .tabset-fade .tabset-pills}
+
+El presente tema expone la representación visual mediantes gráficos, nube de palabras, otros elementos. Se abordarán los puntos:
+
+- ¿Qué utilizar?.
+- Visualización clásica.
+- ggplot.
+- Plotly.
+- sunburstR
+- highcharter
+
+Al finalizar la sesión podrá conocer los principales paquetes - librerías de visualización de datos en R.
+
+
+
+
+## Formas de visualizar {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png)
+
+
+Existen muchas, muchíiiiiiiisimas formas para visualizar la información. ¿Qué deberíamos elegir? Esto depende de lo que queramos hacer.
+
+- Barras verticales / horizontales.
+- Histogramas.
+- Lineas.
+- Áreas.
+- Disperción.
+- Circular.
+- Anillos o donas.
+- Proyección solar.
+- Bloques.
+- Radar.
+- Mapas.
+- Nube de palabras.
+- etc...
+
+Y la lista podría seguir...
+
+Al analizar datos nos hacemos la pregunta: ¿qué debería utlizar para visualr esta información?
+
+Acá les presento una guía resumida:
+
+![](flowchartmod.jpg) 
+
+¿Y para visual el texto que utilizamos?
+
+Trataremos de cubrir esta pregunta más adelante, sin embargo adentarse en el mundo de la visualización es descubrir que existe una gama mucho más amplia, versatil e interesante a la hora de visualizar nuestra data. 
+
+
+##  Clásico. {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png)
+
+
+
+
+
+
+
+## lattice {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png)
+
+
+
+
+
+
+
+
+## ggplot2 {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png)
+
+
+
+
+
+
+
+
+## ggchart {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png) 
+
+
+
+
+
+
+
+
+## Plotly {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png)
+
+
+
+
+
+
+
+
+
+## dygraph {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png)
+
+
+
+
+
+
+
+
+
+
+
+
+## sunburstR {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png)
+
+
+
+
+
+
+
+
+
+
+
+
+## highcharter {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png)
+
+
+
+
+
+
+
+
+## REF {.tabset .tabset-fade .tabset-pills}
+
+![](bsn.png)
+
+
+### lattice
+
+### ggplot2
+
+### ggchart
+
+### Plotly
+
+### dygraph
+
+### sunburstR
+
+### highcharter
